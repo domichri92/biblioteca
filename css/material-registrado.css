@@ -1,0 +1,365 @@
+*{
+    padding: 0;
+    margin: 0;
+    border-top: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(172, 172, 172);
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+.contenido{
+    margin-top: 20px;
+    position: absolute;
+    border: 1px solid;
+    border-radius: 6px;
+    border-color: beige;
+    height: auto;
+    width: 80%;
+    background-color: beige;
+}
+.cabeza{
+    padding: 20px;
+    background-color: #FFefd7;
+    text-align: right;
+}
+header{
+    position: relative;
+    display: flex;
+    height: auto;
+}
+.logo {
+    height: 65px;
+    width: 259px;
+    margin-top: 10px;
+}
+.logo2{
+    margin-top: 10px;
+    display: none;
+}
+.nombre{
+    margin-left: 30px;
+    align-content: flex-end;
+    display: flex;
+    text-align: end;
+}
+.titulo{
+    margin-left: auto;
+}
+
+/* menú*/
+
+nav{
+    max-width: 100%;
+    margin: auto;
+    background-color: rgb(177, 176, 176);
+    font-size: 16px;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu li a{
+    display: block;
+    padding: 8px 20px;
+    color: #292929;
+    text-decoration: none;
+}
+.menu li:hover{
+    background-color: #FFFBF3;
+}
+.menu li a:hover{
+    color: rgb(131, 131, 131);
+}
+.submenu{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 155px;
+    background-color: rgb(177, 176, 176);
+}
+.menu li:hover .submenu{
+    display: block;
+}
+.submenu li:hover{
+    background-color: #FFFBF3;
+}
+.submenu li a:hover{
+    color: rgb(131, 131, 131);
+}
+
+/*IMAGEN*/
+.despues{
+    display: flex;
+    width: auto;
+    height: 70vh;
+    background-image: url(/img/este2.png);
+    background-size: cover;
+    justify-content: center;
+}
+
+/*CUENTA*/
+
+.tabs2{
+    background-color: #FFFBF3;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px 0px;
+    margin: 15px;
+    height: auto;
+    width: auto;
+    border: 2px solid;
+    border-radius: 5px;
+    /*box-shadow: -1px 2px 8px 6px;*/
+    border-color: #F8B7A0;
+    color: #F8B7A0;
+    align-items: center;
+    justify-content: center;
+}
+.historial{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 25px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    color: #F8B7A0;
+    height: 260px;
+    width: 1000px;
+    color: #F8B7A0;
+    overflow: scroll;
+}
+
+.usuario{
+    margin: 20px 40px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+.title{
+    color: #292929;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+/*.nombre-usuario{
+    margin: 8px 10px;
+    color: rgb(48, 48, 48);
+}
+.correo-usuario{
+    margin: 8px 10px;
+    color: rgb(161, 161, 161);
+}*/
+.-volver{
+    font-size: 12px;
+    padding-top: 12px;
+}
+a{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #FFFBF3;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    border-top: 1px solid;
+    color: rgb(177, 176, 176); 
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1000px) {
+    .tabs2{
+        display: flex;
+        justify-content: center;
+        width: 70vw;
+    }
+    .historial{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .tabs2{
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+    }
+    .historial{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .tabs2{
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+    }
+    .historial{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 670px) {
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        display: none;
+    }
+    .logo2{
+        display: flex;
+        height: 50px;
+        width: auto;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .tabs2{
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .contenido{
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/*CASILLAS*/
+
+::placeholder{
+    padding: 5px;
+    color: #acacac;
+}
+.input-formulario{
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 40px;
+    border: 1px solid;
+    border-color: #F8B7A0;
+    color: rgb(48, 48, 48);
+}
+
+/*BOTONES*/
+
+button{
+    padding: 0px 8px;
+    cursor: pointer;
+    background-color: #F8B7A0;
+    color: #fffaf3;
+    border-color: #F8B7A0;
+    border-radius: 6px;
+    margin: 6px 18px;
+    font-size: 12px;
+}
+.b1{
+    width: 80px;
+    margin: 6px 10px;
+}
+.b1b1{
+    color: #fffaf3;
+}
+.sino{
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*PARRAFO*/
+
+p{
+    text-align: justify;
+    color: #292929;
+}
+
+
+/* TABLA*/
+
+ 
+
+.hide {display:none;}
+
+.red {color:Red;}
+
+/*YO AÑADÍ*/
+
+input{
+    padding: 5px;
+    border: 0.5px solid;
+    color: #F8B7A0;
+}
+.placeholder{
+    color: #292929;
+}
+table{
+    width: auto;
+}
+table,
+	table tr{
+		width: 100%;
+	}
+table,
+	table tr,
+	table tr th,
+	table tr td{
+        padding: 5px 20px;
+		border: 1px solid #F8B7A0;
+		border-collapse: collapse;
+        background-color: #fffaf3;
+	}
+
+    table,
+	table tr,
+	table tr th,
+	table tr td{
+        color: #292929;
+	}
+
+/*
+li{
+    list-style: none;
+}
+
+.menu{
+    display: flex;
+    height: 50px;
+    background-color: #918179;
+}
+.submenu{
+    height: 0px;
+    width: min-content;
+    position: absolute;
+    background-color: #a39690;
+    width: 100%;
+    overflow: hidden;
+}
+.submenu li a {
+    display: block;
+    padding: 8px 15px;
+    color: #FFFAF3;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.submenu li a:hover{
+    color: #7e6f67;
+}
+
+.menu li:hover .submenu{
+    height: auto;
+}*/

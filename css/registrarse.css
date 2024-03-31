@@ -1,0 +1,147 @@
+*{padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0; 
+    background: #fffaf3 ;
+}
+
+.cabeza{
+    padding: 15px;
+    margin: 0;
+    height: 80px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #fffaf3;
+    text-align: center;
+    color: #D5231A;
+}
+p{
+    font-size: 20px;
+}
+
+.tipo1{
+    position: relative;
+    float: left;
+    padding: 20px 10px;
+    margin: 0;
+    height: auto;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #fffaf3;
+    align-items: center;
+    text-align: center;
+}
+.tipo2{
+    
+    position: relative;
+    float: right;
+    padding: 20px 10px;
+    margin: 0;
+    height: auto;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #fffaf3;
+    align-items: center;
+    text-align: center;
+}
+.marco{
+    padding-bottom: 20px;
+    position: relative;
+    height: auto;
+    width: 424px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-color: #F8B7A0;
+    align-items: center;
+    justify-content: center;
+} 
+
+
+input{
+    cursor: pointer;
+    padding: 5px 8px;
+    color: #292929;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: #F8B7A0;
+}
+
+button{
+    margin-top: 20px;
+    margin-left: 122px;
+    align-items: center;
+    cursor: pointer;
+    background-color: #F8B7A0;
+    color: #fffaf3;
+    padding: 8px 50px;  
+    border-radius: 5px; 
+    /*box-sizing: border-box;
+    border: 1px solid;*/
+    border-color: #F8B7A0;
+}
+::placeholder{
+    color: #acacac;
+    border-color: #F8B7A0;
+}
+
+button{align-items: center;
+    cursor: pointer;
+    background-color: #F8B7A0;
+    color: #fffaf3;
+    padding: 8px 50px;  
+    border-radius: 5px; 
+    /*box-sizing: border-box;
+    border: 1px solid;*/
+    border-color: #F8B7A0;
+    margin-bottom: 20px;
+}
+a{
+    font-size: small;
+    text-decoration: none;
+    padding: 8px 50px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    color: #292929;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.-volver{
+    font-size: 12px;
+    padding-top: 8px;
+}
+a{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 500px) {
+    .marco{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+    }
+    .cabeza{
+        width: 70vw;
+    }
+    button{
+        margin-left: 16px;
+    }
+}

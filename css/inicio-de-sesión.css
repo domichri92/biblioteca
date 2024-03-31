@@ -1,0 +1,127 @@
+*{padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0; 
+    background: #fffaf3 ;
+    display: flex;
+    justify-content: center;
+}
+.cabeza{
+    display: flex;
+    padding: 15px;
+    margin: 0;
+    height: 80px;
+    width: 398px;
+    border-radius: 5px;
+    background-color: #fffaf3;
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+    padding-left: 16%;
+}
+.marco{
+        background-color: #FFFBF3;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 20px;
+        margin: 50px;
+        height: auto;
+        width: max-content;
+        border: 2px solid;
+        border-radius: 5px;
+        /*box-shadow: -1px 2px 8px 6px;*/
+        color: #F8B7A0;
+        align-items: center;
+        justify-content: center;
+} 
+
+
+a{
+    font-size: small;
+    text-decoration: none;
+    padding: 8px 50px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo2{
+    display: flex;
+    height: 50px;
+    width: auto;
+}
+.title{
+    color: #292929;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.-volver{
+    font-size: 12px;
+    padding-top: 8px;
+}
+a{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/*CASILLAS*/
+
+::placeholder{
+    padding: 5px;
+    color: #acacac;
+}
+.input-formulario{
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 40px;
+    border: 1px solid;
+    border-color: #F8B7A0;
+    color: rgb(48, 48, 48);
+}
+
+/*BOTONES*/
+
+button{
+    padding: 8px 50px;
+    cursor: pointer;
+    background-color: #F8B7A0;
+    color: #fffaf3;
+    border-color: #F8B7A0;
+    border-radius: 6px;
+    margin: 6px 18px;
+    font-size: 15px;
+}
+.b1{
+    width: 80px;
+    margin: 6px 10px;
+}
+.b1b1{
+    color: #fffaf3;
+}
+.sino{
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    .marco{
+        width: 80vw;
+    }
+    .cabeza{
+        width: 70vw;
+    }
+}
