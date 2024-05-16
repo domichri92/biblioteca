@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./css/material-registrado.css" rel="stylesheet" />
+    <link href="./css/historial-préstamos.css" rel="stylesheet" />
     <script src="js/tablas-buscar.js"></script>
     <link
       rel="stylesheet"
@@ -36,7 +36,7 @@
                 >
               </li>
               <li>
-                <a href="index.html"
+                <a href="index.php"
                   ><i class="fa-solid fa-house"></i>&nbsp; Inicio</a
                 >
               </li>
@@ -83,7 +83,7 @@
             <div class="tabs2">
               <!--se muestran aquí los usuarios registrados-->
               <div class="title">
-                <div class="titulo-busqueda"><h3>Material registrado</h3></div>
+                <h3>Historial de préstamos</h3>
               </div>
               <div class="historial">
                 <form>
@@ -103,107 +103,29 @@
 
                     <th>ISBN</th>
                     <th>Título</th>
-                    <th>Autor</th>
-                    <th>Género</th>
-                    <th>Colección</th>
-                    <th>Editorial</th>
-                    <th>Año de publicación</th>
+                    <th>CC</th>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Fecha</th>
                   </tr>
                   <!--Estas son las filas, van en vertical-->
 
                   <tr>
                     <td>979-8827411369</td>
                     <td>Painted Scars</td>
-                    <td>Neva <br />Altaj</td>
-                    <td>Dark</td>
-                    <td>Perfectly <br />Imperfect</td>
-                    <td>2020</td>
-                    <td>Independiente</td>
-                  </tr>
-
-                  <tr>
-                    <td>8498386314</td>
-                    <td>Harry Potter <br />y la piedra <br />filosofal</td>
-                    <td>J. K. Rowling</td>
-                    <td>
-                      Infantil<br />
-                      Fantasía<br />
-                      Aventura<br />
-                      Ficción
-                    </td>
-                    <td>Harry <br />Potter</td>
-                    <td>2014</td>
-                    <td>Salamandra <br />Infantil <br />y Juvenil</td>
+                    <td>1112.987.476</td>
+                    <td>Luisa</td>
+                    <td>Gonzales Ríos</td>
+                    <td>01-07-2023</td>
                   </tr>
 
                   <tr>
                     <td>8408165801</td>
-                    <td>Battle <br />Royale</td>
-                    <td>Koushun <br />Takami</td>
-                    <td>
-                      Distopía<br />
-                      Ciencia Ficción<br />
-                      Thriller
-                    </td>
-                    <td>N/A</td>
-                    <td>2017</td>
-                    <td>Booket</td>
-                  </tr>
-
-                  <tr>
-                    <td>164473687X</td>
-                    <td>Cuento <br />de hadas</td>
-                    <td>Stephen <br />King</td>
-                    <td>
-                      Thriller psicológico<br />
-                      Fantasía Oscura<br />
-                      Horror
-                    </td>
-                    <td>N/A</td>
-                    <td>2022</td>
-                    <td>Vintage <br />Español</td>
-                  </tr>
-
-                  <tr>
-                    <td>843760494X</td>
-                    <td>Cien años <br />de soledad</td>
-                    <td>Gabriel <br />García <br />Márquez</td>
-                    <td>
-                      Realismo mágico<br />
-                      Alta fantasía
-                    </td>
-                    <td>N/A</td>
-                    <td>2007</td>
-                    <td>Ediciones <br />Cátedra</td>
-                  </tr>
-
-                  <tr>
-                    <td>1644732696</td>
-                    <td>Mujercitas</td>
-                    <td>Louisa <br />May Alcott</td>
-                    <td>
-                      Infantil<br />
-                      Comedia
-                    </td>
-                    <td>Alfaguara <br />Clásicos</td>
-                    <td>2020</td>
-                    <td>Alfaguara <br />Infantil</td>
-                  </tr>
-
-                  <tr>
-                    <td>0525565884</td>
-                    <td>
-                      Diario de<br />
-                      Anne Frank
-                    </td>
-                    <td>Anne Frank</td>
-                    <td>
-                      Biografía<br />
-                      Autobiografía
-                    </td>
-                    <td>N/A</td>
-                    <td>2018</td>
-                    <td>Vintage <br />Espanol</td>
+                    <td>Harry Potter <br />y la piedra <br />filosofal</td>
+                    <td>456.589.174</td>
+                    <td>Mario Luis</td>
+                    <td>Paredes Arroyo</td>
+                    <td>11-05-2023</td>
                   </tr>
 
                   <tr class="noSearch hide">

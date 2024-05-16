@@ -35,7 +35,7 @@
                 >
               </li>
               <li>
-                <a href="index.html"
+                <a href="index.php"
                   ><i class="fa-solid fa-house"></i>&nbsp; Inicio</a
                 >
               </li>
@@ -59,26 +59,26 @@
                 >
                 <ul class="submenu">
                   <li>
-                    <a href="registrar-usuario.html">Registrar usuario</a>
+                    <a href="registrar-usuario.php">Registrar usuario</a>
                   </li>
                   <li>
-                    <a href="registrar-material.html">Registrar material</a>
+                    <a href="registrar-material.php">Registrar material</a>
                   </li>
                   <li>
-                    <a href="registrar-préstamo.html">Registrar préstamo</a>
+                    <a href="registrar-préstamo.php">Registrar préstamo</a>
                   </li>
                   <li>
-                    <a href="resgistrar-devolución.html"
+                    <a href="registrar-devolucion.php"
                       >Registrar devolución</a
                     >
                   </li>
                   <li>
-                    <a href="usuarios-registrados.html"
+                    <a href="usuarios-registrados.php"
                       >Usuarios registrados
                     </a>
                   </li>
                   <li>
-                    <a href="material-registrado.html">Material registrado</a>
+                    <a href="material-registrado.php">Material registrado</a>
                   </li>
                 </ul>
               </li>
@@ -88,10 +88,10 @@
                 >
                 <ul class="submenu">
                   <li>
-                    <a href="historial-préstamos.html">Historial préstamos</a>
+                    <a href="historial-préstamos.php">Historial préstamos</a>
                   </li>
                   <li>
-                    <a href="historial-devoluciones.html"
+                    <a href="historial-devoluciones.php"
                       >Historial devoluciones</a
                     >
                   </li>

@@ -1,6 +1,6 @@
 <?php
 include "./php/conexion_be.php";
-if(isset($_POST{"submit"})) {  
+if(isset($_POST["submit"])) {  
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Acceder a los valores enviados desde el formulario
@@ -70,7 +70,7 @@ $stmt->execute();
                 >
               </li>
               <li>
-                <a href="index.html"
+                <a href="index.php"
                   ><i class="fa-solid fa-house"></i>&nbsp; Inicio</a
                 >
               </li>
@@ -91,12 +91,14 @@ $stmt->execute();
                   ><i class="fa-solid fa-book"></i>&nbsp; Registro</a
                 >
                 <ul class="submenu">
-                  <li><a href="#04.1">Registrar usuario</a></li>
-                  <li><a href="#04.2">Registrar material</a></li>
-                  <li><a href="#04.3">Registrar préstamo</a></li>
-                  <li><a href="#04.5">Registrar devolución</a></li>
-                  <li><a href="#04.6">Usuarios registrados </a></li>
-                  <li><a href="#04.7">Material registrado</a></li>
+                               
+                  <li><a href="registrar-usuario.php">Registrar usuario</a></li>
+                  <li><a href="registrar-material.php">Registrar material</a></li>
+                  <li><a href="registrar-préstamo.php">Registrar préstamo</a></li>
+                  <li><a href="registrar-devolucion.php">Registrar devolución</a></li>
+                  <li><a href="usuarios-registrados.php">Usuarios registrados </a></li>
+                  <li><a href="material-registrado.php">Material registrado</a></li>
+                              
                 </ul>
               </li>
               <li>
@@ -116,9 +118,7 @@ $stmt->execute();
           <div class="tab-cuenta">
             <div class="tabs1">
 
-              <form  action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-
-
+              <form  action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
               <div class="title"><h3>Registrar usuario</h3></div>
               <div class="registrar-usuario-contenido">
                 <div>
@@ -145,7 +145,7 @@ $stmt->execute();
                   <input class="b1" type="submit" value="Registrar" name="submit"/>
                    
                   
-                  <a href="index.html" class="-volver -volver2">volver</a>
+                  <a href="index.php" class="-volver -volver2">volver</a>
                 </div>
               </div>
               </form>

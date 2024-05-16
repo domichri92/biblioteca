@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./css/registrar-préstamo.css" rel="stylesheet" />
+    <link href="./css/registrar-devolución.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -35,7 +35,7 @@
                 >
               </li>
               <li>
-                <a href="index.html"
+                <a href="index.php"
                   ><i class="fa-solid fa-house"></i>&nbsp; Inicio</a
                 >
               </li>
@@ -56,12 +56,12 @@
                   ><i class="fa-solid fa-book"></i>&nbsp; Registro</a
                 >
                 <ul class="submenu">
-                  <li><a href="#04.1">Registrar usuario</a></li>
-                  <li><a href="#04.2">Registrar material</a></li>
-                  <li><a href="#04.3">Registrar préstamo</a></li>
-                  <li><a href="#04.5">Registrar devolución</a></li>
-                  <li><a href="#04.6">Usuarios registrados </a></li>
-                  <li><a href="#04.7">Material registrado</a></li>
+                  <li><a href="registrar-usuario.php">Registrar usuario</a></li>
+                  <li><a href="registrar-material.php">Registrar material</a></li>
+                  <li><a href="registrar-préstamo.php">Registrar préstamo</a></li>
+                  <li><a href="registrar-devolucion.php">Registrar devolución</a></li>
+                  <li><a href="usuarios-registrados.php">Usuarios registrados </a></li>
+                  <li><a href="material-registrado.php">Material registrado</a></li>
                 </ul>
               </li>
               <li>
@@ -69,6 +69,7 @@
                   ><i class="fa-solid fa-box-archive"></i>&nbsp; Historial</a
                 >
                 <ul class="submenu">
+                  <li><a href="#05.1">Historial</a></li>
                   <li><a href="#05.2">Historial préstamos</a></li>
                   <li><a href="#05.3">Historial devoluciones</a></li>
                 </ul>
@@ -81,9 +82,9 @@
           <div class="tab-cuenta">
             <div class="tabs1">
               <div class="title">
-                <h3>Registrar préstamo</h3>
+                <h3>Registrar devolución</h3>
               </div>
-              <div class="registrar-prestamo-contenido">
+              <div class="registrar-devolucion-contenido">
                 <div>
                   <label></label>
                   <input class="input-formulario" placeholder="ISBN" />

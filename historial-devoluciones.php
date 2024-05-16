@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./css/historial-préstamos.css" rel="stylesheet" />
+    <link href="./css/historial-devoluciones.css" rel="stylesheet" />
     <script src="js/tablas-buscar.js"></script>
     <link
       rel="stylesheet"
@@ -36,7 +36,7 @@
                 >
               </li>
               <li>
-                <a href="index.html"
+                <a href="index.php"
                   ><i class="fa-solid fa-house"></i>&nbsp; Inicio</a
                 >
               </li>
@@ -83,7 +83,7 @@
             <div class="tabs2">
               <!--se muestran aquí los usuarios registrados-->
               <div class="title">
-                <h3>Historial de préstamos</h3>
+                <h3>Historial de devoluciones</h3>
               </div>
               <div class="historial">
                 <form>
@@ -113,10 +113,10 @@
                   <tr>
                     <td>979-8827411369</td>
                     <td>Painted Scars</td>
-                    <td>1112.987.476</td>
-                    <td>Luisa</td>
-                    <td>Gonzales Ríos</td>
-                    <td>01-07-2023</td>
+                    <td>535.090.573</td>
+                    <td>Liliana Marcela</td>
+                    <td>Contreras Rodríguez</td>
+                    <td>08-08-2023</td>
                   </tr>
 
                   <tr>
@@ -125,7 +125,16 @@
                     <td>456.589.174</td>
                     <td>Mario Luis</td>
                     <td>Paredes Arroyo</td>
-                    <td>11-05-2023</td>
+                    <td>08-07-2023</td>
+                  </tr>
+
+                  <tr>
+                    <td>979-8827411369</td>
+                    <td>Painted Scars</td>
+                    <td>1112.987.476</td>
+                    <td>Luisa</td>
+                    <td>Gonzales Ríos</td>
+                    <td>20-05-2023</td>
                   </tr>
 
                   <tr class="noSearch hide">

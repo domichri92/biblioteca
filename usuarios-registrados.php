@@ -36,7 +36,7 @@
                 >
               </li>
               <li>
-                <a href="index.html"
+                <a href="index.php"
                   ><i class="fa-solid fa-house"></i>&nbsp; Inicio</a
                 >
               </li>
@@ -57,12 +57,12 @@
                   ><i class="fa-solid fa-book"></i>&nbsp; Registro</a
                 >
                 <ul class="submenu">
-                  <li><a href="#04.1">Registrar usuario</a></li>
-                  <li><a href="#04.2">Registrar material</a></li>
-                  <li><a href="#04.3">Registrar préstamo</a></li>
-                  <li><a href="#04.5">Registrar devolución</a></li>
-                  <li><a href="#04.6">Usuarios registrados </a></li>
-                  <li><a href="#04.7">Material registrado</a></li>
+                <li><a href="registrar-usuario.php">Registrar usuario</a></li>
+                  <li><a href="registrar-material.php">Registrar material</a></li>
+                  <li><a href="registrar-préstamo.php">Registrar préstamo</a></li>
+                  <li><a href="registrar-devolucion.php">Registrar devolución</a></li>
+                  <li><a href="usuarios-registrados.php">Usuarios registrados </a></li>
+                  <li><a href="material-registrado.php">Material registrado</a></li>
                 </ul>
               </li>
               <li>
