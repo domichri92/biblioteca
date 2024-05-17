@@ -71,8 +71,8 @@
                   ><i class="fa-solid fa-box-archive"></i>&nbsp; Historial</a
                 >
                 <ul class="submenu">
-                  <li><a href="#05.2">Historial préstamos</a></li>
-                  <li><a href="#05.3">Historial devoluciones</a></li>
+                <li><a href="historial-préstamos.php">Historial préstamos</a></li>
+                  <li><a href="historial-devoluciones.php">Historial devoluciones</a></li>
                 </ul>
               </li>
             </ul>

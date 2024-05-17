@@ -4,7 +4,7 @@ if(isset($_POST["submit"])) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Acceder a los valores enviados desde el formulario
-  $isbn = $_POST["isbn"];
+  $ISBN = $_POST["ISBN"];
   $titulo = $_POST["titulo"];
   $autor = $_POST["autor"];
   $genero = $_POST["genero"];
@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   //print_r($_POST); die;
   $sql = "INSERT INTO tbl_registrar_material (isbn, titulo, autor, genero, coleccion, editorial, ano_publicacion) VALUES (:ISBN, :titulo, :autor, :genero, :coleccion, :editorial, :ano_publicacion)";
 $stmt = $conexion->prepare($sql);
-$stmt->bindParam(':isbn', $isbn);
+$stmt->bindParam(':ISBN', $ISBN);
 $stmt->bindParam(':titulo', $titulo);
 $stmt->bindParam(':autor', $autor);
 $stmt->bindParam(':genero', $genero);
@@ -66,7 +66,7 @@ $stmt->execute();
           <nav class="navegacion">
             <ul class="menu">
               <li>
-                <a href="#01"
+                <a href="inicio-de-sesión.html"
                   ><i class="fa-solid fa-arrow-left"></i>&nbsp; Salir</a
                 >
               </li>
@@ -76,7 +76,7 @@ $stmt->execute();
                 >
               </li>
               <li>
-                <a href="#03"
+                <a href="index.php"
                   ><i class="fa-solid fa-user"></i>&nbsp; Administrador</a
                 >
                 <ul class="submenu">
@@ -88,7 +88,7 @@ $stmt->execute();
                 </ul>
               </li>
               <li>
-                <a href="#04"
+                <a href="index.php"
                   ><i class="fa-solid fa-book"></i>&nbsp; Registro</a
                 >
                 <ul class="submenu">
@@ -101,12 +101,12 @@ $stmt->execute();
                 </ul>
               </li>
               <li>
-                <a href="#05"
+                <a href="index.php"
                   ><i class="fa-solid fa-box-archive"></i>&nbsp; Historial</a
                 >
                 <ul class="submenu">
-                  <li><a href="#05.2">Historial préstamos</a></li>
-                  <li><a href="#05.3">Historial devoluciones</a></li>
+                <li><a href="historial-préstamos.php">Historial préstamos</a></li>
+                  <li><a href="historial-devoluciones.php">Historial devoluciones</a></li>
                 </ul>
               </li>
             </ul>
@@ -123,7 +123,7 @@ $stmt->execute();
               <div class="registrar-material-contenido">
                 <div>
                   <label></label>
-                  <input class="input-formulario" placeholder="ISBN" name="isbn" />
+                  <input class="input-formulario" placeholder="ISBN" name="ISBN" />
                 </div>
                 <div>
                   <label></label>

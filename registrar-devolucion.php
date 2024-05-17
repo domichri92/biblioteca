@@ -1,3 +1,35 @@
+<?php
+include "./php/conexion_be.php";
+if(isset($_POST["submit"])) {  
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // Acceder a los valores enviados desde el formulario
+  $ISBN = $_POST["ISBN"];
+  $cc = $_POST["cc"];
+  $fecha = $_POST["fecha"];
+  //print_r($_POST); die;
+  $sql = "INSERT INTO tbl_registrar_devolucion (isbn, cc, fecha) VALUES (:ISBN, :cc, :fecha)";
+$stmt = $conexion->prepare($sql);
+$stmt->bindParam(':ISBN', $ISBN);
+$stmt->bindParam(':cc', $cc);
+$stmt->bindParam(':fecha', $fecha);
+$stmt->execute();
+
+
+  // Hacer lo que necesites con los datos...
+} else {
+  // Si no se han enviado datos del formulario, mostrar un mensaje de error o redirigir a otra página
+  echo "No se han recibido datos del formulario";
+}
+
+}
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,7 +62,7 @@
           <nav class="navegacion">
             <ul class="menu">
               <li>
-                <a href="#01"
+                <a href="inicio-de-sesión.html"
                   ><i class="fa-solid fa-arrow-left"></i>&nbsp; Salir</a
                 >
               </li>
@@ -40,7 +72,7 @@
                 >
               </li>
               <li>
-                <a href="#03"
+                <a href="index.php"
                   ><i class="fa-solid fa-user"></i>&nbsp; Administrador</a
                 >
                 <ul class="submenu">
@@ -52,7 +84,7 @@
                 </ul>
               </li>
               <li>
-                <a href="#04"
+                <a href="index.php"
                   ><i class="fa-solid fa-book"></i>&nbsp; Registro</a
                 >
                 <ul class="submenu">
@@ -65,13 +97,13 @@
                 </ul>
               </li>
               <li>
-                <a href="#05"
+                <a href="index.php"
                   ><i class="fa-solid fa-box-archive"></i>&nbsp; Historial</a
                 >
                 <ul class="submenu">
                   <li><a href="#05.1">Historial</a></li>
-                  <li><a href="#05.2">Historial préstamos</a></li>
-                  <li><a href="#05.3">Historial devoluciones</a></li>
+                  <li><a href="historial-préstamos.php">Historial préstamos</a></li>
+                  <li><a href="historial-devoluciones.php">Historial devoluciones</a></li>
                 </ul>
               </li>
             </ul>
@@ -84,27 +116,31 @@
               <div class="title">
                 <h3>Registrar devolución</h3>
               </div>
-              <div class="registrar-devolucion-contenido">
+              <form  action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                <div class="registrar-devolucion-contenido">
                 <div>
                   <label></label>
-                  <input class="input-formulario" placeholder="ISBN" />
+                  <input class="input-formulario" placeholder="ISBN" name="ISBN" />
                 </div>
                 <div>
                   <label></label>
-                  <input class="input-formulario" placeholder="CC" />
+                  <input class="input-formulario" placeholder="CC" name="cc"/>
                 </div>
                 <div>
                   <label></label>
-                  <input type="date" class="input-formulario -fecha" />
+                  <input type="date" class="input-formulario -fecha" name="fecha"/>
                 </div>
                 <div class="sino">
-                  <button class="b1">
-                    <a href="#" class="b1b1">Registrar</a>
-                  </button>
-                  <a href="index.html" class="-volver -volver2">volver</a>
+                  
+                  <input class="b1" type="submit" value="Registrar" name="submit">
+
+                  <a href="index.php" class="-volver -volver2">volver</a>
                 </div>
-              </div>
+                </div>
+              </form> 
+            
             </div>
+              </div>
           </div>
         </div>
       </div>

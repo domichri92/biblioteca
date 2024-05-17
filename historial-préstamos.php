@@ -70,8 +70,8 @@
                   ><i class="fa-solid fa-box-archive"></i>&nbsp; Historial</a
                 >
                 <ul class="submenu">
-                  <li><a href="#05.2">Historial préstamos</a></li>
-                  <li><a href="#05.3">Historial devoluciones</a></li>
+                <li><a href="historial-préstamos.php">Historial préstamos</a></li>
+                  <li><a href="historial-devoluciones.php">Historial devoluciones</a></li>
                 </ul>
               </li>
             </ul>
@@ -134,7 +134,7 @@
                 </table>
               </div>
               <div class="sino">
-                <a href="index.html" class="-volver -volver2">volver</a>
+                <a href="index.php" class="-volver -volver2">volver</a>
               </div>
             </div>
           </div>

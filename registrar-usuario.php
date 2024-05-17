@@ -65,7 +65,7 @@ $stmt->execute();
           <nav class="navegacion">
             <ul class="menu">
               <li>
-                <a href="#01"
+                <a href="inicio-de-sesión.php"
                   ><i class="fa-solid fa-arrow-left"></i>&nbsp; Salir</a
                 >
               </li>
@@ -75,7 +75,7 @@ $stmt->execute();
                 >
               </li>
               <li>
-                <a href="#03"
+                <a href="index.php"
                   ><i class="fa-solid fa-user"></i>&nbsp; Administrador</a
                 >
                 <ul class="submenu">
@@ -87,7 +87,7 @@ $stmt->execute();
                 </ul>
               </li>
               <li>
-                <a href="#04"
+                <a href="index.php"
                   ><i class="fa-solid fa-book"></i>&nbsp; Registro</a
                 >
                 <ul class="submenu">
@@ -102,12 +102,12 @@ $stmt->execute();
                 </ul>
               </li>
               <li>
-                <a href="#05"
+                <a href="index.php"
                   ><i class="fa-solid fa-box-archive"></i>&nbsp; Historial</a
                 >
                 <ul class="submenu">
-                  <li><a href="#05.2">Historial préstamos</a></li>
-                  <li><a href="#05.3">Historial devoluciones</a></li>
+                <li><a href="historial-préstamos.php">Historial préstamos</a></li>
+                  <li><a href="historial-devoluciones.php">Historial devoluciones</a></li>
                 </ul>
               </li>
             </ul>
