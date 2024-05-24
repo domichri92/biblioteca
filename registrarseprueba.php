@@ -10,6 +10,9 @@ if (!$enlace) {
     echo "Error en la conexión con el servidor";
 }
 ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

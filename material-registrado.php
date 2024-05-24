@@ -31,7 +31,7 @@
           <nav class="navegacion">
             <ul class="menu">
               <li>
-                <a href="#01"
+                <a href="inicio-de-sesión.php"
                   ><i class="fa-solid fa-arrow-left"></i>&nbsp; Salir</a
                 >
               </li>
@@ -41,7 +41,7 @@
                 >
               </li>
               <li>
-                <a href="#03"
+                <a href="index-php"
                   ><i class="fa-solid fa-user"></i>&nbsp; Administrador</a
                 >
                 <ul class="submenu">
@@ -53,7 +53,7 @@
                 </ul>
               </li>
               <li>
-                <a href="#04"
+                <a href="index.php"
                   ><i class="fa-solid fa-book"></i>&nbsp; Registro</a
                 >
                 <ul class="submenu">
@@ -67,7 +67,7 @@
                 </ul>
               </li>
               <li>
-                <a href="#05"
+                <a href="index.php"
                   ><i class="fa-solid fa-box-archive"></i>&nbsp; Historial</a
                 >
                 <ul class="submenu">

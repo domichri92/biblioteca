@@ -66,7 +66,7 @@ $stmt->execute();
           <nav class="navegacion">
             <ul class="menu">
               <li>
-                <a href="inicio-de-sesión.html"
+                <a href="inicio-de-sesión.php"
                   ><i class="fa-solid fa-arrow-left"></i>&nbsp; Salir</a
                 >
               </li>

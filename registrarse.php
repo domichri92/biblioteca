@@ -87,8 +87,7 @@ $stmt->execute();
           <div class="sino">
                   <input class="b1" type="submit" value="Registrar" name="submit"/>
                    
-                  
-                  <a href="inicio-de-sesión.html" class="-volver">volver</a>
+                  <a href="inicio-de-sesión.php" class="-volver">volver</a>
           </div>
          </div>
       </form>
